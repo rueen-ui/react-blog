@@ -28,7 +28,7 @@ const useFetch = (url, updateFlag) => {
         return () => {
             abortCont.abort()
         }
-    }, [updateFlag])
+    }, [url, updateFlag])
 
     return {data, isLoading, error}
 }
