@@ -4,7 +4,7 @@ import useFetch from './useFetch';
 
 const Home = () => {
 	const [updateFlag, setUpdateFlag] = useState(false);
-	const {data, isLoading, error} = useFetch('http://localhost:8000/posts', updateFlag);
+	const {data, isLoading, error} = useFetch('https://my-json-server.typicode.com/rueen-ui/react-blog/posts', updateFlag);
 
 	return (
 		<div className="home">

@@ -4,7 +4,7 @@ import deletePost from "./deletePost";
 
 const BlogDetails = () => {
     const {id} = useParams();
-    const {data: blog, isLoading, error} = useFetch('http://localhost:8000/posts/' + id);
+    const {data: blog, isLoading, error} = useFetch('https://my-json-server.typicode.com/rueen-ui/react-blog/posts/' + id);
     const navigate = useNavigate();
 
     const afterDelete = () => {

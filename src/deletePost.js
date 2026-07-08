@@ -1,5 +1,5 @@
 const deletePost = (id, callback) => {
-	fetch('http://localhost:8000/posts/' + id, {
+	fetch('https://my-json-server.typicode.com/rueen-ui/react-blog/posts/' + id, {
 		method: 'DELETE',
 	}).then(() => {
         if (typeof callback === "function") callback();

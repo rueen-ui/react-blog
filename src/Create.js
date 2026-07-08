@@ -18,7 +18,7 @@ const Create = () => {
 		e.preventDefault();
 		setIsPending(true);
 		const blog = { title, body, author };
-		fetch('http://localhost:8000/posts', {
+		fetch('https://my-json-server.typicode.com/rueen-ui/react-blog/posts', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify(blog),
